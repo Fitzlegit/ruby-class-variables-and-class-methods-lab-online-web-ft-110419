@@ -17,7 +17,7 @@ class Song
     @@genres << @genre
     @@artists << @artist
   end
-   binding.pry
+   
   def count 
     @@count
   end
@@ -41,6 +41,7 @@ class Song
     end
     genres_hash
   end
+  binding.pry
         
   
   def artist_count
