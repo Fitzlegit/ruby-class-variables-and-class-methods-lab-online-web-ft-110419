@@ -17,10 +17,9 @@ class Song
     @@genres << @genre
     @@artists << @artist
   end
-  
+   binding.pry
   def count 
     @@count
-    binding.pry
   end
   
   def genres
