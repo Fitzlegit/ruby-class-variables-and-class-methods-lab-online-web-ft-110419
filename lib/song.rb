@@ -18,19 +18,19 @@ class Song
     @@artists << @artist
   end
    
-  def count 
+  def self.count 
     @@count
   end
   
-  def genres
+  def self.genres
     @@genres.uniq!
   end
   
-  def artists
+  def self.artists
     @@artists.uniq!
   end
   
-  def genre_count
+  def self.genre_count
     genres_hash = {}
     @@genres.each do |name| 
       if genres_hash = genres_hash.empty?
@@ -43,7 +43,7 @@ class Song
   end
         
   
-  def artist_count
+  def self.artist_count
     artist_hash = {}
     @@artists.each do |name|
       if artist_hash = artist_hash.empty?
