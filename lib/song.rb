@@ -18,5 +18,8 @@ class Song
   end
   
   def genre
-    @@genre.u
+    @@genre.uniq!
+  end
+  
+  
 end
