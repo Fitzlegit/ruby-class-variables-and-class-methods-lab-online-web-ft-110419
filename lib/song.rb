@@ -29,7 +29,9 @@ class Song
   
   def genre_count
     genres_hash = {}
-    @@genres.each
+    @@genres.each do |g| 
+      if genres_hash = genres_hash.empty?
+        genres_hash{
   
   def artist_count
     
